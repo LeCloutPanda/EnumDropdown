@@ -1,0 +1,10 @@
+{
+  "localeCode": "en-US",
+  "authors": ["LeCloutPanda"],
+  "messages": {
+    "Settings.dev.lecloutpanda.enumdropdown": "Enum Dropdown",
+    "Settings.dev.lecloutpanda.enumdropdown.Breadcrumb": "Enum Dropdown",
+    "Settings.dev.lecloutpanda.enumdropdown.showMoreEnumInfo.Key": "Show more Enum info",
+    "Settings.dev.lecloutpanda.enumdropdown.showMoreEnumInfo.Description": "Whether or not to show more information about enums in the selector."
+  }
+}

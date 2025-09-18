@@ -1,0 +1,47 @@
+# This file is used by the Thunderstore CLI to build and publish your mod to Thunderstore. https://github.com/thunderstore-io/thunderstore-cli
+
+[config]
+schemaVersion = "0.0.1"
+
+[package]
+namespace = "LeCloutPanda"
+name = "EnumDropdown"
+versionNumber = "2.2.0"
+description = "Adds a dropdown for enum fields for easier selection"
+websiteUrl = "https://github.com/LeCloutPanda/EnumDropdown"
+containsNsfwContent = false
+
+[package.dependencies] 
+ResoniteModding-BepisLoader = "1.3.1"
+
+[build]
+icon = "./icon.png"
+readme = "./README.md"
+outdir = "./build"
+
+[[build.copy]]
+source = "./EnumDropdown/bin/Release/EnumDropdown.dll"
+target = "plugins/EnumDropdown/"
+
+[[build.copy]]
+source = "./EnumDropdown/Locale"
+target = "plugins/EnumDropdown/Locale"
+
+[[build.copy]]
+source = "./EnumDropdown/bin/Release/EnumDropdown.pdb"
+target = "plugins/EnumDropdown/"
+
+# [[build.copy]]
+# source = "./CHANGELOG.md"
+# target = "/"
+
+[[build.copy]]
+source = "./LICENSE"
+target = "/"
+
+[publish]
+repository = "https://thunderstore.io"
+communities = ["resonite"]
+
+[publish.categories]
+resonite = [ "libraries" ] 
